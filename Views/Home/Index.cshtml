@@ -1,0 +1,55 @@
+﻿@model List<ProjetosModel>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Portfólio</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Meu Portfólio</h1>
+        </header>
+        <main>
+            <section id="projects">
+                <h2>Meus Projetos no GitHub</h2>
+                <ul id="projectList"></ul>
+                <p id="noProjectsFound" style="display:none;">Nenhum projeto encontrado.</p>
+            </section>
+        </main>
+        <footer>
+            <p>Meu Portfólio - @DateTime.Now.Year</p>
+        </footer>
+    </div>
+    //
+    //<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   // <script>
+   //     $(document).ready(function () {
+   //         var projectList = $('#projectList');
+   //         $.ajax({
+   //             url: '@Url.Action("Index", "Projetos")',
+   //             type: 'GET',
+   //             dataType: 'json',
+   //             success: function (data) {
+   //                 if (data.length > 0 && !projectList.children().length) {
+   //                     $.each(data, function (index, project) {
+   //                         var li = $('<li/>').appendTo(projectList);
+   //                         $('<h3/>').text(project.Name).appendTo(li);
+   //                         $('<p/>').text(project.Description).appendTo(li);
+   //                         $('<a/>').attr('href', project.Url).text('Veja no GitHub').appendTo(li);
+   //                     });
+   //                 } else {
+   //                     $('#noProjectsFound').show();
+   //                 }
+   //             },
+   //             error: function () {
+   //                 $('#noProjectsFound').show();
+   //             }
+   //         });
+   //     });
+   //
+   // </script>
+</body>
+</html>
