@@ -21,6 +21,7 @@ namespace Portifolio
                 services.AddControllersWithViews();
             }
 
+
             public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
             {
                 if (env.IsDevelopment())
@@ -37,8 +38,9 @@ namespace Portifolio
                 app.UseStaticFiles();
 
                 app.UseRouting();
+  
 
-                app.UseAuthorization();
+            app.UseAuthorization();
 
                 app.UseEndpoints(endpoints =>
                 {

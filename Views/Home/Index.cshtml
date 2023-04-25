@@ -3,6 +3,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meu Portfólio</title>
@@ -10,46 +14,102 @@
 <body>
     <div class="container">
         <header>
-            <h1>Meu Portfólio</h1>
         </header>
         <main>
-            <section id="projects">
-                <h2>Meus Projetos no GitHub</h2>
-                <ul id="projectList"></ul>
-                <p id="noProjectsFound" style="display:none;">Nenhum projeto encontrado.</p>
+            <section id="image">
+                <a>
+                    <img src="https://i.ibb.co/d5BrgYs/fotohome.png" alt="Minha Foto" border="0" style="width: 20%; border-radius: 50%;">
+                </a>
             </section>
-        </main>
+                <section id="about-me" class="section">
+                        <h2>Sobre mim</h2>
+                        <p class="section-text">Olá, eu sou um Profissional de TI com mais de 4 anos de experiência em Suporte remoto e 
+                            Infraestrutura de TI. Além disso, tenho conhecimentos em análise de sistemas ASP.Net e boa compreensão e escrita em SQL. 
+                            Durante 4 anos, trabalhei em atendimento ao cliente e aprendi a importância de ser um solucionador de problemas e 
+                            estar sempre motivado para enfrentar novos desafios.</p>
+                </section>
+            <section>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Experiência Profissional</h2>
+                        <div id="experiencias" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#experiencias" data-slide-to="0" class="active"></li>
+                                <li data-target="#experiencias" data-slide-to="1"></li>
+                                <li data-target="#experiencias" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <h3>Encarregado de Tecnologia - Avatim</h3>
+                                    <p>2019 - Atualmente</p>
+                                    <p>Responsável pela infraestrutura de TI</p>
+                                    <p>Análise de Banco de Dados e Sistemas Asp.Net</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <h3>Operador de Caixa - Mais Voce Itabuna</h3>
+                                    <p>2018 - 2019</p>
+                                    <p>Atendimento ao Cliente</p>
+                                    <p>Experiência com uso de ERP</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <h3>Técnico de Informática - Infocriativa</h3>
+                                    <p>2016 - 2016</p>
+                                    <p>Manutenção de Hardware e Software</p>
+                                    <p>Suporte Presencial</p>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#experiencias" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#experiencias" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="estudos">
+                <h2>Meus Estudos</h2>
+
+                <h3>Cursos Online</h3>
+                <ul>
+                    <li>SQL - 30 Horas</li>
+                    <li>SQL Completo - Softblue - 20 Horas</li>
+                    <li>MySQL Consultas com Join - DIO - 2 Horas</li>
+                    <li>Modelando um banco de dados SQL Server - DIO - 2 Horas</li>
+                    <li>SQL Server Boas práticas - DIO - 2 Horas</li>
+                    <li>SQL Server Criando consultas - DIO - 4 Horas</li>
+                    <li>Desenvolvimento - 15 Horas</li>
+                </ul>
+
+                <h3>Certificações</h3>
+                <ul>
+                    <li>Fundamentos de Informática - IBSEC</li>
+                    <li>Fundamentos de Cibersegurança - IBSEC</li>
+                    <li>Transact SQL - Linkedin</li>
+                </ul>
+            </section>
+
+            <section id="certificados">
+                <h2>Meus Certificados</h2>
+
+                <div class="carousel">
+                    <img src="https://i.ibb.co/zrkN5G4/sodapdf-converted-Page-1.jpg" alt="Fundação Bradesco">
+                    <img src="https://i.ibb.co/m4XpWV1/585617-D98-D1-C.jpg" alt="Certificado ">
+                    <img src="https://i.ibb.co/r2q1k9n/certificate-1.jpg" alt="Certificado 1">
+                    <img src="https://i.ibb.co/7K2kdjK/certificate-page-0001.jpg" alt="Certificado 1">
+                    <img src="https://i.ibb.co/khcf5qz/F9409551-page-0001.jpg" alt="Certificado 1">
+                    <img src="https://i.ibb.co/XzcNS7B/768-BE547-page-0001.jpg" alt="Certificado 1">
+                    <img src="https://i.ibb.co/x23wNsB/AF1-C4-A7-E-page-0001.jpg" alt="Certificado 1">
+                    <img src="https://i.ibb.co/cyNNMJr/E787-B9-E3-page-0001.jpg" alt="Certificado 1">
+                </div>
+            </section>
+         
+
         <footer>
             <p>Meu Portfólio - @DateTime.Now.Year</p>
         </footer>
+        </main>
     </div>
-    //
-    //<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-   // <script>
-   //     $(document).ready(function () {
-   //         var projectList = $('#projectList');
-   //         $.ajax({
-   //             url: '@Url.Action("Index", "Projetos")',
-   //             type: 'GET',
-   //             dataType: 'json',
-   //             success: function (data) {
-   //                 if (data.length > 0 && !projectList.children().length) {
-   //                     $.each(data, function (index, project) {
-   //                         var li = $('<li/>').appendTo(projectList);
-   //                         $('<h3/>').text(project.Name).appendTo(li);
-   //                         $('<p/>').text(project.Description).appendTo(li);
-   //                         $('<a/>').attr('href', project.Url).text('Veja no GitHub').appendTo(li);
-   //                     });
-   //                 } else {
-   //                     $('#noProjectsFound').show();
-   //                 }
-   //             },
-   //             error: function () {
-   //                 $('#noProjectsFound').show();
-   //             }
-   //         });
-   //     });
-   //
-   // </script>
 </body>
 </html>

@@ -18,7 +18,7 @@ namespace Portifolio.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Experiencia()
         {
             return View();
         }
