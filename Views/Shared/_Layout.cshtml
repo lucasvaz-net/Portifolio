@@ -6,7 +6,6 @@
     <title>@ViewData["Title"] - Portifolio</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Portifolio.styles.css" asp-append-version="true" />
 </head>
 <body>
     <header>
@@ -30,13 +29,17 @@
             </div>
         </nav>
     </header>
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
+
+       
         </main>
     </div>
+   
 
-    <footer class="border-top footer text-muted">
+          <footer class="border-top footer text-muted text-center">
         <div class="container">
             &copy; 2023 - Portifolio - <a asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
         </div>
